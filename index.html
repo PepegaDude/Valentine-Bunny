@@ -126,6 +126,60 @@
       from { transform: scale(.96); opacity: 0; }
       to { transform: scale(1); opacity: 1; }
     }
+
+    @media (max-width: 480px) {
+  body {
+    padding: 12px;
+  }
+
+  .card {
+    padding: 18px 16px;
+    border-radius: 18px;
+  }
+
+  .art {
+    width: 70vw;
+    max-width: 220px;
+    margin-bottom: 6px;
+  }
+
+  h1 {
+    font-size: 22px;
+    margin: 10px 0 14px;
+  }
+
+  .button-zone {
+    width: 100%;
+    height: 200px;
+  }
+
+  button {
+    width: 80%;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    padding: 18px;
+  }
+
+  #yesBtn {
+    top: 40%;
+  }
+
+  #noBtn {
+    top: 65%;
+  }
+
+  .hint {
+    font-size: 12px;
+  }
+
+  .result h2 {
+    font-size: 28px;
+  }
+}
+button {
+  touch-action: manipulation;
+}
   </style>
 </head>
 
@@ -307,7 +361,7 @@
         (b.left + b.width / 2) - e.clientX,
         (b.top + b.height / 2) - e.clientY
       );
-      if (d < 140) moveNo(e.clientX, e.clientY);
+      if (d < 180) moveNo(e.clientX, e.clientY);
     });
 
     noBtn.addEventListener("click", e => e.preventDefault());
@@ -323,6 +377,7 @@
   </script>
 </body>
 </html>
+
 
 
 
