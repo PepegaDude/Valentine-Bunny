@@ -133,43 +133,66 @@
   <canvas id="confettiCanvas"></canvas>
 
   <main class="card">
-    <!-- ANIMAL WITH HEART -->
-    <svg class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="fur" x1="0" x2="1">
-          <stop offset="0" stop-color="#f7c7a1"/>
-          <stop offset="1" stop-color="#f2a97b"/>
-        </linearGradient>
-        <linearGradient id="heart" x1="0" x2="1">
-          <stop offset="0" stop-color="#ff4d7d"/>
-          <stop offset="1" stop-color="#ff1f68"/>
-        </linearGradient>
-      </defs>
+    <!-- CUTE BUNNY WITH HEART -->
+      <svg class="art" viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="bunny" x1="0" x2="1">
+            <stop offset="0" stop-color="#ffffff"/>
+            <stop offset="1" stop-color="#f3f4f6"/>
+          </linearGradient>
+          <linearGradient id="ear" x1="0" x2="1">
+            <stop offset="0" stop-color="#ffd1dc"/>
+            <stop offset="1" stop-color="#ffb3c7"/>
+          </linearGradient>
+          <linearGradient id="heart" x1="0" x2="1">
+            <stop offset="0" stop-color="#ff4d7d"/>
+            <stop offset="1" stop-color="#ff1f68"/>
+          </linearGradient>
+        </defs>
+      
+        <!-- Heart -->
+        <path d="M200 40
+                 C200 25 220 18 232 32
+                 C244 18 264 25 264 40
+                 C264 65 232 80 232 95
+                 C232 80 200 65 200 40Z"
+              fill="url(#heart)"/>
+      
+        <!-- Ears -->
+        <ellipse cx="120" cy="60" rx="18" ry="55" fill="url(#bunny)"/>
+        <ellipse cx="120" cy="65" rx="10" ry="40" fill="url(#ear)"/>
+      
+        <ellipse cx="200" cy="60" rx="18" ry="55" fill="url(#bunny)"/>
+        <ellipse cx="200" cy="65" rx="10" ry="40" fill="url(#ear)"/>
+      
+        <!-- Head -->
+        <circle cx="160" cy="125" r="55" fill="url(#bunny)"/>
+      
+        <!-- Eyes -->
+        <circle cx="145" cy="120" r="5" fill="#111"/>
+        <circle cx="175" cy="120" r="5" fill="#111"/>
+      
+        <!-- Nose -->
+        <path d="M160 132
+                 C154 132 150 136 150 140
+                 C150 146 160 150 160 150
+                 C160 150 170 146 170 140
+                 C170 136 166 132 160 132Z"
+              fill="#ff7aa2"/>
+      
+        <!-- Mouth -->
+        <path d="M160 150
+                 C155 155 150 158 145 158"
+              stroke="#444" stroke-width="2" fill="none"/>
+        <path d="M160 150
+                 C165 155 170 158 175 158"
+              stroke="#444" stroke-width="2" fill="none"/>
+      
+        <!-- Paws -->
+        <ellipse cx="135" cy="175" rx="12" ry="8" fill="#f3f4f6"/>
+        <ellipse cx="185" cy="175" rx="12" ry="8" fill="#f3f4f6"/>
+      </svg>
 
-      <path d="M250 50 C250 33 270 25 282 38
-               C294 25 314 33 314 50
-               C314 78 282 92 282 106
-               C282 92 250 78 250 50Z"
-            fill="url(#heart)"/>
-
-      <path d="M90 120 C90 70 140 40 190 60
-               C240 40 290 70 290 120
-               C290 180 240 210 190 210
-               C140 210 90 180 90 120Z"
-            fill="url(#fur)"/>
-
-      <path d="M110 92 L95 55 L140 78 Z" fill="#f2a97b"/>
-      <path d="M270 92 L285 55 L240 78 Z" fill="#f2a97b"/>
-
-      <circle cx="160" cy="130" r="8"/>
-      <circle cx="220" cy="130" r="8"/>
-
-      <path d="M190 144 C186 144 182 148 182 152
-               C182 160 190 164 190 170
-               C190 164 198 160 198 152
-               C198 148 194 144 190 144Z"
-            fill="#ff7aa2"/>
-    </svg>
 
     <h1>Rachel will you be my valentine?</h1>
 
@@ -300,6 +323,7 @@
   </script>
 </body>
 </html>
+
 
 
 
